@@ -26,7 +26,7 @@ module boy_surface() {
         // Création d'une branche de support
         color("red") {
             hull() {
-                translate([x,y,z])
+                translate([x,y,z+0.25])
                     sphere(r=step/3); // Point de connexion sur le disque
 
                 translate(center)
