@@ -1,12 +1,18 @@
 // Paramètres de la courbe de Lissajous
+
+// modifier les fréquences pour changer le motif
 freq_x = 3;   // Fréquence sur X
 freq_y = 2;   // Fréquence sur Y
 freq_z = 5;   // Fréquence sur Z
-amplitude = 20; // Amplitude globale
-phases = [0, 0, 0]; // Déphasages [X, Y, Z]
+amplitude = 100; // Amplitude globale
+
+// [3, 2, 1] - Spirale classique
+// [5, 3, 0] - Motif entrelacé (mettre phase_z à 90)
+// [7, 1, 2] - Structure complexe
+phases = [7, 1, 2]; // Déphasages [X, Y, Z]
 
 // Paramètres du tube
-diameter = 3;      // Diamètre du tube
+diameter = 15;      // Diamètre du tube
 $fn = 32;          // Résolution des cercles
 steps = 300;       // Nombre de points (plus = plus lisse)
 periods = 3;       // Nombre de périodes
